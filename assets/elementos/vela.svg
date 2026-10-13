@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <title>Vela · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<circle cx="220" cy="128" r="110" fill="#E3B35C" opacity="0.16"/><circle cx="220" cy="128" r="64" fill="#E3B35C" opacity="0.18"/>
+<path d="M220 40 C262 96 270 132 220 176 C170 132 178 96 220 40 Z" fill="#E3B35C" stroke="#0B0811" stroke-width="9" stroke-linejoin="round"/>
+<path d="M220 104 C236 128 236 146 220 162 C204 146 204 128 220 104 Z" fill="#E07D84"/>
+<path d="M220 176 V198" stroke="#0B0811" stroke-width="7" stroke-linecap="round"/>
+<path d="M168 198 H272 V372 H168 Z" fill="#E9DDC1" stroke="#0B0811" stroke-width="9" stroke-linejoin="round"/>
+<path d="M168 198 H272 V214 Q262 214 260 236 Q258 250 250 236 Q246 214 232 214 H212 Q200 214 198 252 Q196 270 188 252 Q184 214 168 214 Z" fill="#D9C9A3" stroke="#0B0811" stroke-width="6" stroke-linejoin="round"/>
+<path d="M104 372 H336 Q336 404 300 404 H140 Q104 404 104 372 Z" fill="#2B2340" stroke="#0B0811" stroke-width="9" stroke-linejoin="round"/>
+</svg>

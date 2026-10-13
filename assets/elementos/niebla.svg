@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <title>Niebla · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<g fill="none" stroke-linecap="round">
+  <path d="M-20 110 q55.0 -26 110 0 q55.0 26 110 0 q55.0 -26 110 0 q55.0 26 110 0 q55.0 -26 110 0" stroke="#CFCADF" stroke-width="22" opacity="0.35"/>
+  <path d="M-60 180 q65.0 -30 130 0 q65.0 30 130 0 q65.0 -30 130 0 q65.0 30 130 0" stroke="#CFCADF" stroke-width="30" opacity="0.55"/>
+  <path d="M-10 260 q60.0 -24 120 0 q60.0 24 120 0 q60.0 -24 120 0 q60.0 24 120 0" stroke="#CFCADF" stroke-width="26" opacity="0.75"/>
+  <path d="M-70 330 q70.0 -28 140 0 q70.0 28 140 0 q70.0 -28 140 0 q70.0 28 140 0" stroke="#E9DDC1" stroke-width="20" opacity="0.9"/>
+</g>
+</svg>

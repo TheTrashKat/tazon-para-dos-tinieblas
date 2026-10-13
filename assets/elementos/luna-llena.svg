@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <title>Luna llena entre la niebla · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<circle cx="220" cy="200" r="150" fill="#E9DDC1" stroke="#0B0811" stroke-width="10"/>
+<circle cx="168" cy="160" r="26" fill="#D9C9A3"/><circle cx="262" cy="232" r="38" fill="#D9C9A3"/><circle cx="196" cy="270" r="16" fill="#D9C9A3"/><circle cx="270" cy="134" r="12" fill="#D9C9A3"/>
+<path d="M30 300 C80 270 120 270 170 300 S260 330 310 300 S390 270 420 292 L420 440 L30 440 Z" fill="#CFCADF" opacity="0.92" stroke="#0B0811" stroke-width="8" stroke-linejoin="round"/>
+<path d="M10 360 C60 330 110 330 160 360 S250 390 300 360 S380 330 430 352 L430 440 L10 440 Z" fill="#A39AB0" stroke="#0B0811" stroke-width="8" stroke-linejoin="round"/>
+</svg>

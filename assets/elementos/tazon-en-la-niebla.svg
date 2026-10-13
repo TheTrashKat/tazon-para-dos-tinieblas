@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <title>Tazón en la niebla · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<path d="M389.24 114.29 A62 62 0 1 1 323.80 34.31 A52 52 0 1 0 389.24 114.29Z" fill="#CFCADF" stroke="#0B0811" stroke-width="8" stroke-linejoin="round"/>
+<g transform="translate(90,70) scale(2.15)"><g stroke="#E9DDC1" stroke-width="7" stroke-linecap="round">
+      <line x1="16" y1="20" x2="29" y2="38"/><line x1="35" y1="12" x2="43" y2="31"/>
+      <line x1="85" y1="12" x2="77" y2="31"/><line x1="104" y1="20" x2="91" y2="38"/>
+    </g>
+    <g fill="#E9DDC1">
+      <circle cx="60" cy="54" r="20"/><circle cx="42" cy="61" r="16"/><circle cx="78" cy="61" r="16"/>
+      <circle cx="30" cy="70" r="11"/><circle cx="90" cy="70" r="11"/>
+      <rect x="20" y="64" width="80" height="12"/>
+      <path d="M14,80 H106 C106,101 92,112 75,112 H45 C28,112 14,101 14,80 Z"/>
+      <rect x="45" y="116" width="30" height="7" rx="3.5"/>
+    </g>
+    <g fill="#1C1629">
+      <rect x="44" y="85" width="6" height="13" rx="3"/><rect x="70" y="85" width="6" height="13" rx="3"/>
+      <path d="M53,101 H67 A7,7 0 0 1 53,101 Z"/>
+    </g></g>
+<path d="M0 330 C60 300 110 300 170 330 S280 360 340 330 S420 306 440 318 V440 H0 Z" fill="#CFCADF" opacity="0.85"/>
+<path d="M0 380 C70 350 130 350 190 380 S300 404 360 380 S420 360 440 368 V440 H0 Z" fill="#A39AB0" opacity="0.9"/>
+</svg>

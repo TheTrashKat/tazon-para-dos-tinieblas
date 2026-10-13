@@ -1,0 +1,448 @@
+{
+  "$description": "Perfil de la sub-marca oscura. Úsalo junto a tokens.json. Hereda todo lo que no se dice aquí del kit original (https://thetrashkat.github.io/tazon-para-dos-marca/).",
+  "version": "1.0.0",
+  "updated": "2026-10-13",
+  "identity": {
+    "name": "Tazón para Dos · Tinieblas",
+    "parent": "Tazón para Dos",
+    "parent_kit": "https://thetrashkat.github.io/tazon-para-dos-marca/",
+    "descriptor": "Historias del Mundo de Tinieblas y leyendas de Engativá",
+    "tagline": "Jugar también es escuchar lo que cuenta la niebla.",
+    "secondary_taglines": [
+      "La mesa también se juega de noche.",
+      "Del humedal al aire.",
+      "Toda leyenda empieza en voz baja."
+    ],
+    "scope": [
+      "Mago: La Ascensión",
+      "Hombre Lobo: El Apocalipsis",
+      "Changeling: El Ensueño",
+      "Leyendas urbanas de Bogotá y Engativá (humedal Jaboque, el río, el barrio)"
+    ],
+    "why_name": "«Tinieblas» nombra a la vez el Mundo de Tinieblas y la hora en que se cuentan las leyendas. Va siempre después del nombre madre, nunca solo."
+  },
+  "palette": {
+    "abismo": {
+      "hex": "#110D18",
+      "name": "Abismo",
+      "group": "fondo",
+      "use": "Tinta #28203B llevada al fondo del pozo. Fondo más oscuro, contornos y sombras."
+    },
+    "noche": {
+      "hex": "#1C1629",
+      "name": "Noche",
+      "group": "fondo",
+      "use": "Fondo principal de pantalla y páginas."
+    },
+    "niebla": {
+      "hex": "#2B2340",
+      "name": "Niebla",
+      "group": "fondo",
+      "use": "Superficies elevadas: tarjetas, recuadros, paneles."
+    },
+    "pergamino": {
+      "hex": "#E9DDC1",
+      "name": "Pergamino",
+      "group": "fondo",
+      "use": "Crema #F7F2E8 envejecida. Texto sobre oscuro y fondo de impresión."
+    },
+    "pergamino_viejo": {
+      "hex": "#D9C9A3",
+      "name": "Pergamino viejo",
+      "group": "fondo",
+      "use": "Recuadros sobre pergamino, papel manchado."
+    },
+    "musgo": {
+      "hex": "#7FA68C",
+      "name": "Musgo de humedal",
+      "group": "acento",
+      "use": "Turquesa #55C4BF apagada hacia el verde del humedal Jaboque."
+    },
+    "musgo_profundo": {
+      "hex": "#3E5E50",
+      "name": "Musgo profundo",
+      "group": "acento",
+      "use": "Bloques de color con texto pergamino encima."
+    },
+    "sangre": {
+      "hex": "#9E3A48",
+      "name": "Sangre seca",
+      "group": "acento",
+      "use": "Coral #EA6077 oxidado. Bloques, sombras duras, triángulo de esquina."
+    },
+    "coral_ceniza": {
+      "hex": "#E07D84",
+      "name": "Coral ceniza",
+      "group": "acento",
+      "use": "La versión del coral que sí se lee como texto sobre fondos oscuros."
+    },
+    "vela": {
+      "hex": "#E3B35C",
+      "name": "Oro de vela",
+      "group": "acento",
+      "use": "Sol #F8CB67 a la luz de una vela. Franjas, destellos, dados, CTA."
+    },
+    "ambar": {
+      "hex": "#7E5A1E",
+      "name": "Ámbar",
+      "group": "acento",
+      "use": "El oro de vela cuando va como texto sobre pergamino."
+    },
+    "luna": {
+      "hex": "#CFCADF",
+      "name": "Luna",
+      "group": "texto",
+      "use": "Texto secundario y líneas finas sobre oscuro."
+    },
+    "ceniza": {
+      "hex": "#A39AB0",
+      "name": "Ceniza",
+      "group": "texto",
+      "use": "Texto atenuado, pies de foto, bordes sobre oscuro."
+    },
+    "tinta": {
+      "hex": "#28203B",
+      "name": "Tinta (original)",
+      "group": "texto",
+      "use": "La tinta de siempre, para texto sobre pergamino."
+    },
+    "tinta_suave": {
+      "hex": "#5A4E66",
+      "name": "Tinta suave",
+      "group": "texto",
+      "use": "Texto atenuado sobre pergamino."
+    }
+  },
+  "outline": "#0B0811",
+  "contrast_wcag": [
+    {
+      "texto": "pergamino",
+      "fondo": "abismo",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#110D18",
+      "ratio": 14.23,
+      "nivel": "AAA",
+      "uso": "Texto principal"
+    },
+    {
+      "texto": "pergamino",
+      "fondo": "noche",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#1C1629",
+      "ratio": 13.02,
+      "nivel": "AAA",
+      "uso": "Texto principal"
+    },
+    {
+      "texto": "pergamino",
+      "fondo": "niebla",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#2B2340",
+      "ratio": 10.99,
+      "nivel": "AAA",
+      "uso": "Texto en tarjetas"
+    },
+    {
+      "texto": "luna",
+      "fondo": "noche",
+      "hex_texto": "#CFCADF",
+      "hex_fondo": "#1C1629",
+      "ratio": 11.01,
+      "nivel": "AAA",
+      "uso": "Texto secundario"
+    },
+    {
+      "texto": "ceniza",
+      "fondo": "noche",
+      "hex_texto": "#A39AB0",
+      "hex_fondo": "#1C1629",
+      "ratio": 6.53,
+      "nivel": "AA",
+      "uso": "Pies de foto, etiquetas"
+    },
+    {
+      "texto": "ceniza",
+      "fondo": "niebla",
+      "hex_texto": "#A39AB0",
+      "hex_fondo": "#2B2340",
+      "ratio": 5.51,
+      "nivel": "AA",
+      "uso": "Atenuado en tarjetas"
+    },
+    {
+      "texto": "vela",
+      "fondo": "noche",
+      "hex_texto": "#E3B35C",
+      "hex_fondo": "#1C1629",
+      "ratio": 9.09,
+      "nivel": "AAA",
+      "uso": "Destacados, enlaces"
+    },
+    {
+      "texto": "musgo",
+      "fondo": "noche",
+      "hex_texto": "#7FA68C",
+      "hex_fondo": "#1C1629",
+      "ratio": 6.47,
+      "nivel": "AA",
+      "uso": "Destacados"
+    },
+    {
+      "texto": "coral_ceniza",
+      "fondo": "noche",
+      "hex_texto": "#E07D84",
+      "hex_fondo": "#1C1629",
+      "ratio": 6.22,
+      "nivel": "AA",
+      "uso": "Avisos, rótulos"
+    },
+    {
+      "texto": "coral_ceniza",
+      "fondo": "niebla",
+      "hex_texto": "#E07D84",
+      "hex_fondo": "#2B2340",
+      "ratio": 5.25,
+      "nivel": "AA",
+      "uso": "Rótulos en tarjetas"
+    },
+    {
+      "texto": "abismo",
+      "fondo": "vela",
+      "hex_texto": "#110D18",
+      "hex_fondo": "#E3B35C",
+      "ratio": 9.93,
+      "nivel": "AAA",
+      "uso": "Botones y píldoras"
+    },
+    {
+      "texto": "abismo",
+      "fondo": "musgo",
+      "hex_texto": "#110D18",
+      "hex_fondo": "#7FA68C",
+      "ratio": 7.07,
+      "nivel": "AAA",
+      "uso": "Píldoras"
+    },
+    {
+      "texto": "pergamino",
+      "fondo": "sangre",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#9E3A48",
+      "ratio": 4.94,
+      "nivel": "AA",
+      "uso": "Texto en bloque sangre"
+    },
+    {
+      "texto": "pergamino",
+      "fondo": "musgo_profundo",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#3E5E50",
+      "ratio": 5.33,
+      "nivel": "AA",
+      "uso": "Texto en bloque musgo"
+    },
+    {
+      "texto": "tinta",
+      "fondo": "pergamino",
+      "hex_texto": "#28203B",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 11.45,
+      "nivel": "AAA",
+      "uso": "Texto impreso"
+    },
+    {
+      "texto": "tinta_suave",
+      "fondo": "pergamino",
+      "hex_texto": "#5A4E66",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 5.73,
+      "nivel": "AA",
+      "uso": "Atenuado impreso"
+    },
+    {
+      "texto": "sangre",
+      "fondo": "pergamino",
+      "hex_texto": "#9E3A48",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 4.94,
+      "nivel": "AA",
+      "uso": "Titulares impresos"
+    },
+    {
+      "texto": "ambar",
+      "fondo": "pergamino",
+      "hex_texto": "#7E5A1E",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 4.62,
+      "nivel": "AA",
+      "uso": "Oro como texto impreso"
+    },
+    {
+      "texto": "musgo_profundo",
+      "fondo": "pergamino",
+      "hex_texto": "#3E5E50",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 5.33,
+      "nivel": "AA",
+      "uso": "Musgo como texto impreso"
+    },
+    {
+      "texto": "tinta",
+      "fondo": "pergamino_viejo",
+      "hex_texto": "#28203B",
+      "hex_fondo": "#D9C9A3",
+      "ratio": 9.44,
+      "nivel": "AAA",
+      "uso": "Recuadros impresos"
+    },
+    {
+      "texto": "vela",
+      "fondo": "pergamino",
+      "hex_texto": "#E3B35C",
+      "hex_fondo": "#E9DDC1",
+      "ratio": 1.43,
+      "nivel": "No",
+      "uso": "NO: oro sobre pergamino"
+    },
+    {
+      "texto": "sangre",
+      "fondo": "noche",
+      "hex_texto": "#9E3A48",
+      "hex_fondo": "#1C1629",
+      "ratio": 2.64,
+      "nivel": "No",
+      "uso": "NO: sangre como texto en la noche"
+    },
+    {
+      "texto": "pergamino",
+      "fondo": "musgo",
+      "hex_texto": "#E9DDC1",
+      "hex_fondo": "#7FA68C",
+      "ratio": 2.01,
+      "nivel": "No",
+      "uso": "NO salvo titular grande con sombra"
+    }
+  ],
+  "typography": {
+    "display": "Space Grotesk 700",
+    "text": "DM Sans 400/700",
+    "mono": "DM Mono 500, mayúsculas, espaciado 0,12–0,14 em",
+    "logo": "Barlow Condensed ExtraBold en contornos (no cambia)"
+  },
+  "system": {
+    "shadows": "Sombra dura desplazada sin desenfoque. Sobre noche: sangre seca o contorno abismo; sobre pergamino: tinta al 18 %.",
+    "dots": "Trama de puntos de 22 px: luna al 8 % sobre oscuro, tinta al 10 % sobre pergamino.",
+    "diagonals": "Bloques separados por diagonales que suben de izquierda a derecha (3–5°) con franja de oro de vela.",
+    "corner": "Triángulo sangre seca con otro de oro de vela, arriba a la derecha.",
+    "motifs": [
+      "luna creciente y llena",
+      "niebla en bandas",
+      "humedal con juncos",
+      "greca muisca (rombo escalonado)",
+      "medallón de Chía",
+      "d20 agrietado",
+      "zarpazo",
+      "espiral",
+      "anillo de hongos",
+      "vela",
+      "destello en oro"
+    ]
+  },
+  "logos": [
+    "favicon.svg",
+    "logotipo-apilado-tinieblas-pergamino.svg",
+    "logotipo-apilado-tinieblas.svg",
+    "logotipo-horizontal-tinieblas-fondo.svg",
+    "logotipo-horizontal-tinieblas-pergamino.svg",
+    "logotipo-horizontal-tinieblas.svg",
+    "mascota-tinieblas.svg",
+    "sello-luna.svg",
+    "sello-tinieblas-pergamino.svg",
+    "sello-tinieblas.svg"
+  ],
+  "elements": [
+    "anillo-hongos.svg",
+    "chia.svg",
+    "d20-agrietado-musgo.svg",
+    "d20-agrietado.svg",
+    "d20-pifia.svg",
+    "destello.svg",
+    "divisor.svg",
+    "espiral.svg",
+    "esquina.svg",
+    "greca-muisca.svg",
+    "humedal.svg",
+    "luna-llena.svg",
+    "luna.svg",
+    "niebla.svg",
+    "tazon-en-la-niebla.svg",
+    "vela.svg",
+    "zarpazo.svg"
+  ],
+  "icons": {
+    "new": [
+      "luna",
+      "luna-llena",
+      "niebla",
+      "vela",
+      "humedal",
+      "espiral",
+      "zarpazo",
+      "huella",
+      "hongo",
+      "d20-agrietado",
+      "greca",
+      "chia",
+      "farol"
+    ],
+    "inherited": [
+      "audifonos",
+      "calendario",
+      "camara",
+      "carta",
+      "comunidad",
+      "corazon",
+      "d20",
+      "dado",
+      "destello",
+      "historia",
+      "idea",
+      "libro",
+      "meeple",
+      "microfono",
+      "onda",
+      "play",
+      "reloj",
+      "tazon",
+      "ubicacion",
+      "votacion",
+      "web"
+    ],
+    "sprite": "assets/iconos/sprite.svg"
+  },
+  "rules": {
+    "do": [
+      "Partir siempre del logo original recoloreado; «Tinieblas» va en la fila del descriptor.",
+      "Texto largo en pergamino sobre noche o en tinta sobre pergamino.",
+      "Oro de vela para lo que debe brillar: franjas, destellos, botones, números.",
+      "Ilustraciones planas con contorno oscuro y pocos objetos (3–5).",
+      "Motivos muiscas como geometría (rombos, escalones, espirales) y con respeto: sin inventar significados sagrados."
+    ],
+    "dont": [
+      "Rostros de personas reales sin consentimiento.",
+      "Sangre realista, gore o calaveras: el miedo se sugiere con niebla, luna y silencio.",
+      "Oro de vela o sangre seca como texto sobre pergamino o noche (no pasa AA); usa ámbar o coral ceniza.",
+      "Degradados, brillos difusos o sombras con desenfoque.",
+      "Redibujar el tazón o usar «Tinieblas» sin el nombre madre.",
+      "Fuentes góticas o de imitación medieval: la tipografía es la de siempre."
+    ]
+  },
+  "story_tool_theme": {
+    "tool": "D:\\herramientas\\pdf-historias\\maquetar.py",
+    "files": [
+      "tema-tinieblas.css",
+      "tema-tinieblas-pergamino.css"
+    ],
+    "proposed_option": "--tema RUTA.css (se añade como <style> después del CSS base y al final de estilo.css en --web)"
+  }
+}

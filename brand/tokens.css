@@ -1,0 +1,51 @@
+/* Tazón para Dos · Tinieblas · tokens (generado por tools/build.py) */
+:root {
+  --abismo: #110D18;  /* Abismo */
+  --noche: #1C1629;  /* Noche */
+  --niebla: #2B2340;  /* Niebla */
+  --pergamino: #E9DDC1;  /* Pergamino */
+  --pergamino-viejo: #D9C9A3;  /* Pergamino viejo */
+  --musgo: #7FA68C;  /* Musgo de humedal */
+  --musgo-profundo: #3E5E50;  /* Musgo profundo */
+  --sangre: #9E3A48;  /* Sangre seca */
+  --coral-ceniza: #E07D84;  /* Coral ceniza */
+  --vela: #E3B35C;  /* Oro de vela */
+  --ambar: #7E5A1E;  /* Ámbar */
+  --luna: #CFCADF;  /* Luna */
+  --ceniza: #A39AB0;  /* Ceniza */
+  --tinta: #28203B;  /* Tinta (original) */
+  --tinta-suave: #5A4E66;  /* Tinta suave */
+  /* compatibilidad con los nombres del kit original: los acentos pasan a su versión nocturna */
+  --ink: #110D18;
+  --paper: #1C1629;
+  --cream: #E9DDC1;
+  --teal: #7FA68C;
+  --coral: #9E3A48;
+  --sun: #E3B35C;
+  --muted: #A39AB0;
+  /* roles */
+  --fondo: var(--noche);
+  --fondo-hondo: var(--abismo);
+  --superficie: var(--niebla);
+  --texto: var(--pergamino);
+  --texto-suave: var(--luna);
+  --texto-tenue: var(--ceniza);
+  --borde: #A39AB0;
+  --contorno: #0B0811;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+  --sombra-dura: 8px 8px 0 #0B0811;
+  --sombra-sangre: 8px 8px 0 #9E3A48;
+  --sombra-vela: 6px 6px 0 #E3B35C;
+  --sombra-tarjeta: 0 8px 0 #0B0811;
+  --font-web-display: 'Space Grotesk', sans-serif;
+  --font-web-text: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-display: 'Space Grotesk', sans-serif;  /* el logotipo conserva Barlow Condensed en contornos */
+  --dots: radial-gradient(rgba(207, 202, 223, 0.08) 1.6px, transparent 1.7px) 0 0 / 22px 22px;
+  --dots-pergamino: radial-gradient(rgba(40, 32, 59, 0.10) 1.6px, transparent 1.7px) 0 0 / 22px 22px;
+  --diagonal: linear-gradient(-3.5deg, transparent 46%, #E3B35C 46% 52%, transparent 52%);
+}

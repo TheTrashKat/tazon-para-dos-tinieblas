@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" width="440" height="440">
+  <title>Luna creciente · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<circle cx="220" cy="220" r="196" fill="#E3B35C" opacity="0.10"/>
+<path d="M351.43 292.30 A150 150 0 1 1 224.44 70.07 A128 128 0 0 0 351.43 292.30Z" fill="#CFCADF" stroke="#0B0811" stroke-width="10" stroke-linejoin="round"/>
+<circle cx="128" cy="230" r="18" fill="#ADA6C4" stroke="#0B0811" stroke-width="5"/><circle cx="160" cy="318" r="13" fill="#ADA6C4" stroke="#0B0811" stroke-width="5"/><circle cx="110" cy="168" r="9" fill="#ADA6C4" stroke="#0B0811" stroke-width="5"/><circle cx="208" cy="352" r="9" fill="#ADA6C4" stroke="#0B0811" stroke-width="5"/>
+<path transform="translate(330,300) scale(0.7)" fill="#E3B35C" stroke="#0B0811" stroke-width="12.0" stroke-linejoin="round" d="M0,-50 C6,-10 10,-6 50,0 C10,6 6,10 0,50 C-6,10 -10,6 -50,0 C-10,-6 -6,-10 0,-50 Z"/><path transform="translate(380,200) scale(0.36)" fill="#E9DDC1" stroke="#0B0811" stroke-width="12.0" stroke-linejoin="round" d="M0,-50 C6,-10 10,-6 50,0 C10,6 6,10 0,50 C-6,10 -10,6 -50,0 C-10,-6 -6,-10 0,-50 Z"/><path transform="translate(300,380) scale(0.28)" fill="#E3B35C" stroke="#0B0811" stroke-width="12.0" stroke-linejoin="round" d="M0,-50 C6,-10 10,-6 50,0 C10,6 6,10 0,50 C-6,10 -10,6 -50,0 C-10,-6 -6,-10 0,-50 Z"/>
+</svg>

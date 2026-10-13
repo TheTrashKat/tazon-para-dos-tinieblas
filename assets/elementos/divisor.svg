@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 110" width="880" height="110">
+  <title>Divisor diagonal · Tazón para Dos · Tinieblas</title>
+  <!-- Generado por tools/build.py · abismo #110D18 · noche #1C1629 · pergamino #E9DDC1 · musgo #7FA68C · sangre #9E3A48 · vela #E3B35C · luna #CFCADF -->
+<path d="M0 82 L880 30 L880 52 L0 104Z" fill="#7FA68C"/><path d="M0 62 L880 10 L880 28 L0 80Z" fill="#E3B35C"/>
+<path d="M0 88 L880 36" stroke="#0B0811" stroke-width="5" fill="none"/><path transform="translate(440,54) scale(0.46)" fill="#E3B35C" stroke="#0B0811" stroke-width="12.0" stroke-linejoin="round" d="M0,-50 C6,-10 10,-6 50,0 C10,6 6,10 0,50 C-6,10 -10,6 -50,0 C-10,-6 -6,-10 0,-50 Z"/>
+</svg>

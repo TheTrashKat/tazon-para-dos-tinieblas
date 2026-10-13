@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tazón para Dos · Tinieblas</title>
+<meta name="description" content="Sub-marca oscura de Tazón para Dos para historias del Mundo de Tinieblas y leyendas de Engativá: paleta, logos, ornamentos, íconos y tema para pdf-historias.">
+<meta name="theme-color" content="#1C1629">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="brand/tokens.css">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html { background: var(--noche); }
+  body { margin: 0; background: var(--noche); color: var(--texto); font-family: var(--font-web-text); line-height: 1.55; overflow-x: hidden; }
+  a { color: var(--vela); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+  code { font-family: var(--font-mono); font-size: .9em; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+  /* hero: como el original (bloque de color + puntos + diagonal), pero de noche */
+  header.hero { background: var(--musgo-profundo); background-image: var(--dots); padding: 52px 0 96px; position: relative; overflow: hidden; }
+  header.hero::before { content: ""; position: absolute; top: 0; right: 0; width: 150px; height: 150px;
+    background: linear-gradient(225deg, var(--vela) 0 30%, var(--sangre) 30% 50%, transparent 50%); }
+  header.hero::after { content: ""; position: absolute; left: -5%; right: -5%; bottom: -44px; height: 84px;
+    background: linear-gradient(var(--vela) 0 12px, var(--contorno) 12px 15px, var(--noche) 15px); transform: rotate(-2.5deg);
+    border-top: 3px solid var(--contorno); }
+  .hero img.logo { height: 92px; max-width: 100%; }
+  .hero .luna { position: absolute; right: 9%; top: 92px; width: 210px; opacity: .95; }
+  h1 { font-family: var(--font-web-display); font-weight: 700; font-size: clamp(54px, 10vw, 118px); line-height: .92; letter-spacing: -.02em; margin: 26px 0 12px; color: var(--vela); }
+  h1 span { color: var(--pergamino); text-shadow: 7px 7px 0 var(--sangre); }
+  .eyebrow { font-family: var(--font-mono); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--pergamino); margin: 0; }
+  .lema { font-family: var(--font-web-display); font-weight: 500; font-size: clamp(19px, 2.4vw, 24px); max-width: 640px; margin: 14px 0 0; }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; position: relative; z-index: 2; }
+  .btn { display: inline-block; background: var(--vela); color: var(--abismo); font: 700 16px var(--font-web-text); letter-spacing: .06em; text-transform: uppercase;
+    padding: 12px 22px; border: 3px solid var(--contorno); border-radius: 999px; box-shadow: 5px 5px 0 var(--contorno); text-decoration: none; }
+  .btn.alt { background: var(--pergamino); }
+  .btn:hover { transform: translate(-1px, -1px); box-shadow: 7px 7px 0 var(--contorno); }
+
+  section { padding: 60px 0 8px; }
+  h2 { font-family: var(--font-web-display); font-weight: 700; font-size: clamp(34px, 5vw, 46px); line-height: 1; margin: 0 0 10px; letter-spacing: -.01em; }
+  h2::after { content: ""; display: block; width: 64px; height: 5px; background: var(--vela); margin-top: 12px; }
+  h3 { font-family: var(--font-mono); font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--vela); margin: 30px 0 12px; }
+  .lead { color: var(--luna); max-width: 700px; margin: 0 0 24px; }
+  .grid { display: grid; gap: 18px; }
+
+  /* paleta */
+  .swatches { grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); }
+  .sw { border-radius: var(--radius-lg); border: 3px solid var(--contorno); overflow: hidden; background: var(--niebla); box-shadow: 6px 6px 0 var(--contorno); }
+  .sw div { height: 92px; border-bottom: 3px solid var(--contorno); }
+  .sw p { margin: 0; padding: 10px 12px 12px; font-size: 14px; }
+  .sw code { font-size: 12px; color: var(--luna); display: block; }
+  .sw small { display: block; color: var(--ceniza); font-size: 12px; margin-top: 4px; line-height: 1.35; }
+  .deriv { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-bottom: 8px; }
+  .deriv div { display: flex; align-items: center; gap: 10px; background: var(--niebla); border: 2px solid var(--contorno); border-radius: var(--radius-md); padding: 10px 12px; font: 500 12px var(--font-mono); letter-spacing: .06em; }
+  .deriv i { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--contorno); flex: none; }
+  .deriv i + i { margin-left: -18px; }
+  .deriv span { line-height: 1.35; }
+  .deriv b { display: block; color: var(--ceniza); font-weight: 400; }
+
+  /* contraste */
+  .tabla { overflow-x: auto; border: 3px solid var(--contorno); border-radius: var(--radius-lg); box-shadow: var(--sombra-sangre); background: var(--niebla); }
+  table.contraste { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 660px; }
+  .contraste th { text-align: left; font: 500 11px var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ceniza); padding: 12px 12px 8px; border-bottom: 2px solid var(--contorno); }
+  .contraste td { padding: 8px 12px; border-bottom: 1px solid rgba(207, 202, 223, .12); }
+  .contraste tr:last-child td { border-bottom: 0; }
+  .contraste code { color: var(--ceniza); font-size: 12px; }
+  .contraste .num { font: 500 14px var(--font-mono); }
+  .par { display: inline-grid; place-items: center; width: 46px; height: 32px; border-radius: 8px; border: 2px solid var(--contorno); font: 700 16px var(--font-web-display); }
+  .nivel { display: inline-block; font: 500 11px var(--font-mono); letter-spacing: .08em; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .nivel.ok { background: var(--musgo); color: var(--abismo); }
+  .nivel.medio { background: var(--vela); color: var(--abismo); }
+  .nivel.no { background: var(--sangre); color: var(--pergamino); }
+
+  /* logos y ornamentos */
+  .logos { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+  .tile { border: 3px solid var(--contorno); border-radius: var(--radius-lg); padding: 20px; background: var(--niebla); display: grid; place-items: center; min-height: 180px; position: relative; overflow: hidden; }
+  .tile.abismo { background: var(--abismo); }
+  .tile.perg { background: var(--pergamino); }
+  .tile.musgo { background: var(--musgo-profundo); }
+  .tile.sangre { background: var(--sangre); }
+  .tile.dots { background-image: var(--dots); }
+  .tile img { max-width: 100%; max-height: 140px; }
+  .tile.ancho { grid-column: 1 / -1; min-height: 120px; }
+  .cap { font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0; color: var(--ceniza); }
+  .cap b { color: var(--pergamino); font-weight: 500; }
+
+  /* tipografía */
+  .type { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .type .tile { place-items: start; align-content: start; gap: 10px; }
+  .t-display { font-family: var(--font-web-display); font-weight: 700; font-size: clamp(40px, 6vw, 60px); line-height: .95; letter-spacing: -.015em; }
+  .t-display span { color: var(--pergamino); text-shadow: 5px 5px 0 var(--sangre); }
+  .t-text { font-size: 18px; color: var(--pergamino); max-width: 46ch; margin: 0; }
+  .t-mono { font: 500 13px var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--vela); }
+
+  /* sistema gráfico */
+  .sistema { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+  .demo { min-height: 200px; }
+  .demo .pill { background: var(--vela); color: var(--abismo); font: 700 15px var(--font-web-text); text-transform: uppercase; letter-spacing: .06em; padding: 12px 20px; border: 3px solid var(--contorno); border-radius: 999px; box-shadow: 6px 6px 0 var(--contorno); }
+  .demo .card { background: var(--noche); border: 3px solid var(--ceniza); border-radius: 16px; padding: 14px 18px; box-shadow: 8px 8px 0 var(--sangre); font-family: var(--font-web-display); font-weight: 700; font-size: 20px; }
+  .demo.diagonal { background: linear-gradient(-3.5deg, var(--abismo) 0 44%, var(--contorno) 44% 45%, var(--vela) 45% 53%, var(--contorno) 53% 54%, var(--sangre) 54%); }
+  .demo.esquina::before { content: ""; position: absolute; top: 0; right: 0; width: 110px; height: 110px; background: url(assets/elementos/esquina.svg) center/100% 100%; }
+  .demo .rotulo { white-space: nowrap; font: 500 12px var(--font-mono); letter-spacing: .12em; text-transform: uppercase; background: var(--abismo); color: var(--vela); padding: 5px 12px; border-radius: 999px; }
+
+  /* íconos */
+  .icons { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
+  .icon { text-align: center; border: 2px solid var(--contorno); border-radius: var(--radius-md); padding: 14px 6px 10px; background: var(--niebla); color: var(--pergamino); }
+  .icon:nth-child(3n+1) { color: var(--vela); } .icon:nth-child(3n+2) { color: var(--musgo); }
+  .icon svg { width: 46px; height: 46px; display: block; margin: 0 auto; }
+  .icon span { display: block; font-family: var(--font-mono); font-size: 11px; margin-top: 6px; color: var(--luna); }
+  .icons.heredados .icon { color: var(--luna); padding: 10px 4px 8px; }
+  .icons.heredados .icon svg { width: 34px; height: 34px; }
+
+  /* tema */
+  .vistas { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+  .vistas a { display: block; border: 3px solid var(--contorno); border-radius: var(--radius-md); overflow: hidden; box-shadow: 6px 6px 0 var(--sangre); background: var(--abismo); }
+  .vistas img { width: 100%; display: block; }
+  pre { background: var(--abismo); color: var(--pergamino); border: 3px solid var(--contorno); border-radius: var(--radius-md); padding: 16px 18px; overflow-x: auto; font: 400 13px/1.6 var(--font-mono); box-shadow: 6px 6px 0 var(--contorno); }
+  pre .c { color: var(--ceniza); }
+  pre .v { color: var(--vela); }
+
+  /* usos */
+  .usos { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .uso { border: 3px solid var(--contorno); border-radius: var(--radius-lg); overflow: hidden; background: var(--niebla); }
+  .uso .muestra { min-height: 150px; display: grid; place-items: center; padding: 18px; border-bottom: 3px solid var(--contorno); position: relative; }
+  .uso p { margin: 0; padding: 12px 16px 14px; font-size: 14px; }
+  .uso p b { display: inline-block; font: 500 11px var(--font-mono); letter-spacing: .12em; padding: 3px 10px; border-radius: 999px; margin-right: 8px; }
+  .uso.si p b { background: var(--musgo); color: var(--abismo); }
+  .uso.no p b { background: var(--sangre); color: var(--pergamino); }
+  .uso.no .muestra::after { content: ""; position: absolute; inset: 14px; background:
+      linear-gradient(to top right, transparent calc(50% - 3px), rgba(158, 58, 72, .9) calc(50% - 3px) calc(50% + 3px), transparent calc(50% + 3px)); pointer-events: none; }
+  .listas { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 22px; }
+  .lista { border: 3px solid var(--contorno); border-radius: var(--radius-lg); padding: 18px 22px; background: var(--niebla); background-image: var(--dots); }
+  .lista h4 { margin: 0 0 8px; font: 700 20px var(--font-web-display); }
+  .lista ul { margin: 0; padding-left: 1.2em; }
+  .lista li { margin: .35em 0; }
+  .lista.si li::marker { content: "✦  "; color: var(--musgo); }
+  .lista.no li::marker { content: "✕  "; color: var(--coral-ceniza); }
+
+  .greca { height: 46px; background: url(assets/elementos/greca-muisca.svg) left center / auto 100% repeat-x; margin-top: 70px; border-top: 3px solid var(--contorno); border-bottom: 3px solid var(--contorno); }
+  footer { padding: 30px 0 40px; background: var(--abismo); color: var(--luna); font-family: var(--font-mono); font-size: 13px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; justify-content: space-between; }
+  footer img { height: 46px; }
+
+  @media (max-width: 760px) {
+    .hero .luna { width: 110px; top: auto; bottom: 70px; right: 16px; opacity: .55; }
+    .wrap { padding: 0 16px; }
+    header.hero::before { width: 90px; height: 90px; }
+    .hero img.logo { height: auto; width: 100%; max-width: 420px; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <img class="luna" src="assets/elementos/luna.svg" alt="">
+  <div class="wrap">
+    <img class="logo" src="assets/logo/logotipo-horizontal-tinieblas.svg" alt="Tazón para Dos · Tinieblas">
+    <h1>Kit <span>Tinieblas.</span></h1>
+    <p class="eyebrow">Sub-marca oscura · Mundo de Tinieblas · Leyendas de Engativá</p>
+    <p class="lema">Jugar también es escuchar lo que cuenta la niebla.</p>
+    <div class="btns">
+      <a class="btn" href="#tema">Tema para pdf-historias</a>
+      <a class="btn alt" href="https://thetrashkat.github.io/tazon-para-dos-marca/">Kit original</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="concepto">
+    <h2>Concepto</h2>
+    <p class="lead"><b>Tazón para Dos · Tinieblas</b> es la versión nocturna de la misma casa. La usamos cuando la mesa juega <i>Mago: La Ascensión</i>, <i>Hombre Lobo: El Apocalipsis</i>, <i>Changeling: El Ensueño</i> o cuenta leyendas urbanas de Bogotá y Engativá: el humedal Jaboque, el río, las calles del barrio. El tazón, las fuentes, la sombra dura, los puntos y las diagonales son los de siempre. Lo que cambia es la luz: luna, niebla, vela y humedal, con geometría de inspiración muisca.</p>
+    <p class="lead">«Tinieblas» nombra a la vez el Mundo de Tinieblas y la hora en que se cuentan las leyendas. Va siempre después del nombre madre, nunca solo.</p>
+  </section>
+
+  <section id="paleta">
+    <h2>Paleta</h2>
+    <p class="lead">Cada color sale de uno del kit original. Los fondos vienen de la tinta y la crema, y los acentos son la turquesa, el coral y el sol vistos de noche. Ningún color lleva degradado.</p>
+    <div class="deriv">
+      <div><i style="background:#55C4BF"></i><i style="background:var(--musgo)"></i><span><b>#55C4BF →</b>Musgo de humedal</span></div>
+      <div><i style="background:#EA6077"></i><i style="background:var(--sangre)"></i><span><b>#EA6077 →</b>Sangre seca</span></div>
+      <div><i style="background:#F8CB67"></i><i style="background:var(--vela)"></i><span><b>#F8CB67 →</b>Oro de vela</span></div>
+      <div><i style="background:#28203B"></i><i style="background:var(--abismo)"></i><span><b>#28203B →</b>Abismo · noche</span></div>
+      <div><i style="background:#F7F2E8"></i><i style="background:var(--pergamino)"></i><span><b>#F7F2E8 →</b>Pergamino</span></div>
+    </div>
+    <h3>Fondos</h3>
+    <div class="grid swatches">
+      <div class="sw"><div style="background:var(--abismo)"></div><p><b>Abismo</b><code>#110D18 · --abismo</code><small>Fondo más hondo, contraportadas.</small></p></div>
+      <div class="sw"><div style="background:var(--noche)"></div><p><b>Noche</b><code>#1C1629 · --noche</code><small>Fondo principal de pantalla y página.</small></p></div>
+      <div class="sw"><div style="background:var(--niebla)"></div><p><b>Niebla</b><code>#2B2340 · --niebla</code><small>Tarjetas, recuadros, paneles.</small></p></div>
+      <div class="sw"><div style="background:var(--pergamino)"></div><p><b>Pergamino</b><code>#E9DDC1 · --pergamino</code><small>Texto sobre oscuro; papel de impresión.</small></p></div>
+      <div class="sw"><div style="background:var(--pergamino-viejo)"></div><p><b>Pergamino viejo</b><code>#D9C9A3 · --pergamino-viejo</code><small>Recuadros sobre pergamino.</small></p></div>
+    </div>
+    <h3>Acentos</h3>
+    <div class="grid swatches">
+      <div class="sw"><div style="background:var(--musgo)"></div><p><b>Musgo de humedal</b><code>#7FA68C · --musgo</code><small>Ex turquesa. Etiquetas, divisores.</small></p></div>
+      <div class="sw"><div style="background:var(--musgo-profundo)"></div><p><b>Musgo profundo</b><code>#3E5E50 · --musgo-profundo</code><small>Bloques con texto pergamino.</small></p></div>
+      <div class="sw"><div style="background:var(--sangre)"></div><p><b>Sangre seca</b><code>#9E3A48 · --sangre</code><small>Ex coral. Bloques, sombras, esquina.</small></p></div>
+      <div class="sw"><div style="background:var(--coral-ceniza)"></div><p><b>Coral ceniza</b><code>#E07D84 · --coral-ceniza</code><small>El coral cuando es texto sobre oscuro.</small></p></div>
+      <div class="sw"><div style="background:var(--vela)"></div><p><b>Oro de vela</b><code>#E3B35C · --vela</code><small>Ex sol. Franjas, destellos, botones.</small></p></div>
+      <div class="sw"><div style="background:var(--ambar)"></div><p><b>Ámbar</b><code>#7E5A1E · --ambar</code><small>El oro cuando es texto sobre pergamino.</small></p></div>
+    </div>
+    <h3>Texto</h3>
+    <div class="grid swatches">
+      <div class="sw"><div style="background:var(--luna)"></div><p><b>Luna</b><code>#CFCADF · --luna</code><small>Texto secundario sobre oscuro.</small></p></div>
+      <div class="sw"><div style="background:var(--ceniza)"></div><p><b>Ceniza</b><code>#A39AB0 · --ceniza</code><small>Pies de foto, bordes sobre oscuro.</small></p></div>
+      <div class="sw"><div style="background:var(--tinta)"></div><p><b>Tinta</b><code>#28203B · --tinta</code><small>La original, para texto impreso.</small></p></div>
+      <div class="sw"><div style="background:var(--tinta-suave)"></div><p><b>Tinta suave</b><code>#5A4E66 · --tinta-suave</code><small>Atenuado sobre pergamino.</small></p></div>
+    </div>
+  </section>
+
+  <section id="contraste">
+    <h2>Contraste</h2>
+    <p class="lead">Cálculo WCAG 2.1 generado por <code>tools/build.py</code>. El texto normal pide 4,5:1 (AA) y el grande, 3:1. Las filas marcadas con «NO» documentan los usos prohibidos: el oro y la sangre sirven como fondo o adorno, no como texto.</p>
+    <div class="tabla"><!--contraste--><table class="contraste"><thead><tr><th></th><th>Texto</th><th>Fondo</th><th>Ratio</th><th>WCAG</th><th>Uso</th></tr></thead><tbody><tr><td><span class="par" style="background:#110D18;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Abismo <code>#110D18</code></td><td class="num">14.23</td><td><span class="nivel ok">AAA</span></td><td>Texto principal</td></tr><tr><td><span class="par" style="background:#1C1629;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Noche <code>#1C1629</code></td><td class="num">13.02</td><td><span class="nivel ok">AAA</span></td><td>Texto principal</td></tr><tr><td><span class="par" style="background:#2B2340;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Niebla <code>#2B2340</code></td><td class="num">10.99</td><td><span class="nivel ok">AAA</span></td><td>Texto en tarjetas</td></tr><tr><td><span class="par" style="background:#1C1629;color:#CFCADF">Aa</span></td><td>Luna <code>#CFCADF</code></td><td>Noche <code>#1C1629</code></td><td class="num">11.01</td><td><span class="nivel ok">AAA</span></td><td>Texto secundario</td></tr><tr><td><span class="par" style="background:#1C1629;color:#A39AB0">Aa</span></td><td>Ceniza <code>#A39AB0</code></td><td>Noche <code>#1C1629</code></td><td class="num">6.53</td><td><span class="nivel ok">AA</span></td><td>Pies de foto, etiquetas</td></tr><tr><td><span class="par" style="background:#2B2340;color:#A39AB0">Aa</span></td><td>Ceniza <code>#A39AB0</code></td><td>Niebla <code>#2B2340</code></td><td class="num">5.51</td><td><span class="nivel ok">AA</span></td><td>Atenuado en tarjetas</td></tr><tr><td><span class="par" style="background:#1C1629;color:#E3B35C">Aa</span></td><td>Oro de vela <code>#E3B35C</code></td><td>Noche <code>#1C1629</code></td><td class="num">9.09</td><td><span class="nivel ok">AAA</span></td><td>Destacados, enlaces</td></tr><tr><td><span class="par" style="background:#1C1629;color:#7FA68C">Aa</span></td><td>Musgo de humedal <code>#7FA68C</code></td><td>Noche <code>#1C1629</code></td><td class="num">6.47</td><td><span class="nivel ok">AA</span></td><td>Destacados</td></tr><tr><td><span class="par" style="background:#1C1629;color:#E07D84">Aa</span></td><td>Coral ceniza <code>#E07D84</code></td><td>Noche <code>#1C1629</code></td><td class="num">6.22</td><td><span class="nivel ok">AA</span></td><td>Avisos, rótulos</td></tr><tr><td><span class="par" style="background:#2B2340;color:#E07D84">Aa</span></td><td>Coral ceniza <code>#E07D84</code></td><td>Niebla <code>#2B2340</code></td><td class="num">5.25</td><td><span class="nivel ok">AA</span></td><td>Rótulos en tarjetas</td></tr><tr><td><span class="par" style="background:#E3B35C;color:#110D18">Aa</span></td><td>Abismo <code>#110D18</code></td><td>Oro de vela <code>#E3B35C</code></td><td class="num">9.93</td><td><span class="nivel ok">AAA</span></td><td>Botones y píldoras</td></tr><tr><td><span class="par" style="background:#7FA68C;color:#110D18">Aa</span></td><td>Abismo <code>#110D18</code></td><td>Musgo de humedal <code>#7FA68C</code></td><td class="num">7.07</td><td><span class="nivel ok">AAA</span></td><td>Píldoras</td></tr><tr><td><span class="par" style="background:#9E3A48;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Sangre seca <code>#9E3A48</code></td><td class="num">4.94</td><td><span class="nivel ok">AA</span></td><td>Texto en bloque sangre</td></tr><tr><td><span class="par" style="background:#3E5E50;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Musgo profundo <code>#3E5E50</code></td><td class="num">5.33</td><td><span class="nivel ok">AA</span></td><td>Texto en bloque musgo</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#28203B">Aa</span></td><td>Tinta (original) <code>#28203B</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">11.45</td><td><span class="nivel ok">AAA</span></td><td>Texto impreso</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#5A4E66">Aa</span></td><td>Tinta suave <code>#5A4E66</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">5.73</td><td><span class="nivel ok">AA</span></td><td>Atenuado impreso</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#9E3A48">Aa</span></td><td>Sangre seca <code>#9E3A48</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">4.94</td><td><span class="nivel ok">AA</span></td><td>Titulares impresos</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#7E5A1E">Aa</span></td><td>Ámbar <code>#7E5A1E</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">4.62</td><td><span class="nivel ok">AA</span></td><td>Oro como texto impreso</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#3E5E50">Aa</span></td><td>Musgo profundo <code>#3E5E50</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">5.33</td><td><span class="nivel ok">AA</span></td><td>Musgo como texto impreso</td></tr><tr><td><span class="par" style="background:#D9C9A3;color:#28203B">Aa</span></td><td>Tinta (original) <code>#28203B</code></td><td>Pergamino viejo <code>#D9C9A3</code></td><td class="num">9.44</td><td><span class="nivel ok">AAA</span></td><td>Recuadros impresos</td></tr><tr><td><span class="par" style="background:#E9DDC1;color:#E3B35C">Aa</span></td><td>Oro de vela <code>#E3B35C</code></td><td>Pergamino <code>#E9DDC1</code></td><td class="num">1.43</td><td><span class="nivel no">No</span></td><td>NO: oro sobre pergamino</td></tr><tr><td><span class="par" style="background:#1C1629;color:#9E3A48">Aa</span></td><td>Sangre seca <code>#9E3A48</code></td><td>Noche <code>#1C1629</code></td><td class="num">2.64</td><td><span class="nivel no">No</span></td><td>NO: sangre como texto en la noche</td></tr><tr><td><span class="par" style="background:#7FA68C;color:#E9DDC1">Aa</span></td><td>Pergamino <code>#E9DDC1</code></td><td>Musgo de humedal <code>#7FA68C</code></td><td class="num">2.01</td><td><span class="nivel no">No</span></td><td>NO salvo titular grande con sombra</td></tr></tbody></table><!--/contraste--></div>
+  </section>
+
+  <section id="logotipo">
+    <h2>Logotipo</h2>
+    <p class="lead">Son los SVG del kit original recoloreados, no un dibujo nuevo. «Tinieblas», con una luna creciente, va en la fila del descriptor. Sobre fondo oscuro el aro del sello es oro de vela; sobre pergamino, tinta.</p>
+    <div class="grid logos">
+      <div><div class="tile"><img src="assets/logo/logotipo-horizontal-tinieblas.svg" alt="Logotipo horizontal Tinieblas"></div><p class="cap"><b>logotipo-horizontal-tinieblas.svg</b> · fondo transparente</p></div>
+      <div><div class="tile abismo"><img src="assets/logo/logotipo-horizontal-tinieblas-fondo.svg" alt="Logotipo horizontal con fondo"></div><p class="cap"><b>…-tinieblas-fondo.svg</b> · con fondo abismo</p></div>
+      <div><div class="tile perg"><img src="assets/logo/logotipo-horizontal-tinieblas-pergamino.svg" alt="Logotipo horizontal pergamino"></div><p class="cap"><b>…-tinieblas-pergamino.svg</b> · para imprimir</p></div>
+      <div><div class="tile"><img src="assets/logo/logotipo-apilado-tinieblas.svg" alt="Logotipo apilado Tinieblas"></div><p class="cap"><b>logotipo-apilado-tinieblas.svg</b></p></div>
+      <div><div class="tile perg"><img src="assets/logo/logotipo-apilado-tinieblas-pergamino.svg" alt="Logotipo apilado pergamino"></div><p class="cap"><b>logotipo-apilado-tinieblas-pergamino.svg</b></p></div>
+      <div><div class="tile abismo dots"><img src="assets/logo/sello-luna.svg" alt="Sello de luna"></div><p class="cap"><b>sello-luna.svg</b> · sello con aro muisca y luna</p></div>
+      <div><div class="tile"><img src="assets/logo/sello-tinieblas.svg" alt="Sello Tinieblas"></div><p class="cap"><b>sello-tinieblas.svg</b></p></div>
+      <div><div class="tile perg"><img src="assets/logo/sello-tinieblas-pergamino.svg" alt="Sello pergamino"></div><p class="cap"><b>sello-tinieblas-pergamino.svg</b></p></div>
+      <div><div class="tile musgo dots"><img src="assets/logo/mascota-tinieblas.svg" alt="Mascota Tinieblas"></div><p class="cap"><b>mascota-tinieblas.svg</b> · y <b>favicon.svg</b></p></div>
+    </div>
+  </section>
+
+  <section id="tipografia">
+    <h2>Tipografía</h2>
+    <p class="lead">Es la del sitio web, sin letras góticas: el misterio lo ponen el color y los ornamentos. El logotipo conserva Barlow Condensed en contornos.</p>
+    <div class="grid type">
+      <div class="tile"><div class="t-display" style="color:var(--vela)">La niebla <span>escucha.</span></div><p class="cap">Space Grotesk 700 · titulares · sombra dura sangre</p></div>
+      <div class="tile"><p class="t-text">Cuentan que en el humedal, cuando baja la neblina, alguien sigue tocando la puerta de la casa vieja. Nos sentamos a la mesa para averiguar quién.</p><span class="t-mono">DM Mono · etiquetas · 0,14 em</span><p class="cap">DM Sans 400 / 700 · texto corrido en pergamino</p></div>
+    </div>
+  </section>
+
+  <section id="sistema">
+    <h2>Sistema gráfico</h2>
+    <p class="lead">Se conservan las reglas del kit. La sombra dura va desplazada y sin desenfoque. La trama de puntos es de 22 px. Las diagonales suben de izquierda a derecha con franja de oro de vela, y la esquina lleva un triángulo sangre con otro de oro.</p>
+    <div class="grid sistema">
+      <div><div class="tile demo"><span class="pill">Quiero jugar</span></div><p class="cap"><b>Sombra dura</b> · 6 px contorno, sin desenfoque</p></div>
+      <div><div class="tile demo abismo"><div class="card">La mesa de noche.</div></div><p class="cap"><b>Sombra sangre</b> · tarjetas sobre noche</p></div>
+      <div><div class="tile demo dots"><span class="rotulo">Puntos 22 px · luna 8 %</span></div><p class="cap"><b>Trama de puntos</b></p></div>
+      <div><div class="tile demo diagonal"></div><p class="cap"><b>Diagonal</b> · sube a la derecha, franja vela</p></div>
+      <div><div class="tile demo esquina abismo"><span class="rotulo">Esquina</span></div><p class="cap"><b>Triángulo de esquina</b> · sangre + vela</p></div>
+      <div><div class="tile demo"><img src="assets/elementos/divisor.svg" alt="" style="width:100%"></div><p class="cap"><b>divisor.svg</b> · musgo + vela + destello</p></div>
+      <div style="grid-column:1/-1"><div class="tile ancho abismo" style="padding:0;min-height:0"><img src="assets/elementos/greca-muisca.svg" alt="" style="width:100%;max-height:none;display:block"></div><p class="cap"><b>greca-muisca.svg</b> · banda de rombos escalonados, repetible en horizontal</p></div>
+    </div>
+  </section>
+
+  <section id="ornamentos">
+    <h2>Ornamentos</h2>
+    <p class="lead">Son ilustraciones planas con contorno casi negro de 8–10 px, como las del kit. Pon un objeto principal con 2 a 4 secundarios. Cada línea de juego tiene su motivo, y los motivos andinos son geometría, no símbolos sagrados inventados.</p>
+    <div class="grid logos">
+      <div><div class="tile sangre dots"><img src="assets/elementos/d20-agrietado.svg" alt=""></div><p class="cap"><b>d20-agrietado.svg</b> · el dado de siempre, con grietas</p></div>
+      <div><div class="tile"><img src="assets/elementos/d20-agrietado-musgo.svg" alt=""></div><p class="cap"><b>d20-agrietado-musgo.svg</b></p></div>
+      <div><div class="tile abismo"><img src="assets/elementos/d20-pifia.svg" alt=""></div><p class="cap"><b>d20-pifia.svg</b> · el 1 que nadie quiere</p></div>
+      <div><div class="tile"><img src="assets/elementos/luna.svg" alt=""></div><p class="cap"><b>luna.svg</b> · creciente, con destellos</p></div>
+      <div><div class="tile abismo"><img src="assets/elementos/luna-llena.svg" alt=""></div><p class="cap"><b>luna-llena.svg</b> · Hombre Lobo</p></div>
+      <div><div class="tile musgo"><img src="assets/elementos/niebla.svg" alt=""></div><p class="cap"><b>niebla.svg</b> · bandas para cubrir bordes</p></div>
+      <div><div class="tile abismo"><img src="assets/elementos/humedal.svg" alt=""></div><p class="cap"><b>humedal.svg</b> · juncos y luna en el agua (Jaboque)</p></div>
+      <div><div class="tile"><img src="assets/elementos/chia.svg" alt=""></div><p class="cap"><b>chia.svg</b> · medallón de la luna muisca</p></div>
+      <div><div class="tile abismo"><img src="assets/elementos/zarpazo.svg" alt=""></div><p class="cap"><b>zarpazo.svg</b> · Hombre Lobo</p></div>
+      <div><div class="tile"><img src="assets/elementos/espiral.svg" alt=""></div><p class="cap"><b>espiral.svg</b> · Mago</p></div>
+      <div><div class="tile abismo"><img src="assets/elementos/anillo-hongos.svg" alt=""></div><p class="cap"><b>anillo-hongos.svg</b> · Changeling</p></div>
+      <div><div class="tile"><img src="assets/elementos/vela.svg" alt=""></div><p class="cap"><b>vela.svg</b> · leyendas, narración</p></div>
+      <div><div class="tile musgo dots"><img src="assets/elementos/tazon-en-la-niebla.svg" alt=""></div><p class="cap"><b>tazon-en-la-niebla.svg</b> · la mascota original</p></div>
+      <div><div class="tile sangre"><img src="assets/elementos/destello.svg" alt=""></div><p class="cap"><b>destello.svg</b> · 2–4 por pieza</p></div>
+    </div>
+  </section>
+
+  <section id="iconos">
+    <h2>Íconos</h2>
+    <p class="lead">Son íconos de línea en una grilla de 64 px, con trazo de 4 px y puntas redondeadas, igual que los originales. Usan <code>currentColor</code>. El sprite <code>assets/iconos/sprite.svg</code> trae los 13 nuevos y los 21 heredados: <code>&lt;svg&gt;&lt;use href="assets/iconos/sprite.svg#i-luna"/&gt;&lt;/svg&gt;</code>.</p>
+    <div class="grid icons" id="nuevos"></div>
+    <h3>Heredados del kit original</h3>
+    <div class="grid icons heredados" id="heredados"></div>
+  </section>
+
+  <section id="tema">
+    <h2>Tema para pdf-historias</h2>
+    <p class="lead"><code>tema-tinieblas.css</code> se aplica encima del CSS de <code>D:\herramientas\pdf-historias\maquetar.py</code> y cambia páginas, cabeceras, pies, capitulares, recuadros, leyendas, portada, contraportada y la versión web. No hace falta tocar el Markdown, y el color de la portada (<code>color:</code> en el front matter) se traduce a su versión nocturna. Para imprimir está <code>tema-tinieblas-pergamino.css</code>, con páginas pergamino y portadas oscuras.</p>
+    <h3>Noche · pantalla</h3>
+    <div class="grid vistas">
+      <a href="tema/vistas/noche-01.png"><img src="tema/vistas/noche-01.png" alt="Portada con el tema noche" loading="lazy"></a>
+      <a href="tema/vistas/noche-02.png"><img src="tema/vistas/noche-02.png" alt="Apertura con banner" loading="lazy"></a>
+      <a href="tema/vistas/noche-03.png"><img src="tema/vistas/noche-03.png" alt="Página a dos columnas" loading="lazy"></a>
+      <a href="tema/vistas/noche-05.png"><img src="tema/vistas/noche-05.png" alt="Recuadro oscuro" loading="lazy"></a>
+      <a href="tema/vistas/noche-06.png"><img src="tema/vistas/noche-06.png" alt="Contraportada" loading="lazy"></a>
+    </div>
+    <h3>Pergamino · impresión</h3>
+    <div class="grid vistas">
+      <a href="tema/vistas/pergamino-02.png"><img src="tema/vistas/pergamino-02.png" alt="Apertura en pergamino" loading="lazy"></a>
+      <a href="tema/vistas/pergamino-03.png"><img src="tema/vistas/pergamino-03.png" alt="Dos columnas en pergamino" loading="lazy"></a>
+      <a href="tema/vistas/pergamino-05.png"><img src="tema/vistas/pergamino-05.png" alt="Recuadro en pergamino" loading="lazy"></a>
+    </div>
+    <h3>Cómo se conecta</h3>
+<pre><span class="c"># opción propuesta para maquetar.py (aún no existe: ver README)</span>
+python -I maquetar.py historia.md <span class="v">--tema D:\tazon-para-dos-tinieblas\tema-tinieblas.css</span>
+python -I maquetar.py historia.md --web web <span class="v">--tema …\tema-tinieblas.css</span>
+
+<span class="c"># hoy, sin tocar la herramienta</span>
+python -I tools\probar_tema.py --md historia.md --tema tema-tinieblas.css --web</pre>
+  </section>
+
+  <section id="usos">
+    <h2>Usos correctos e incorrectos</h2>
+    <p class="lead">Lo oscuro debe sentirse como una mesa a la luz de una vela: cálido, cercano y un poco inquietante, nunca violento.</p>
+    <div class="grid usos">
+      <div class="uso si"><div class="muestra" style="background:var(--noche)"><span style="color:var(--pergamino);font-size:17px;max-width:30ch">Cuando baja la niebla, el humedal se queda callado.</span></div><p><b>SÍ</b>Texto largo en pergamino sobre noche (13:1).</p></div>
+      <div class="uso no"><div class="muestra" style="background:var(--pergamino)"><span style="color:var(--vela);font-size:17px;max-width:30ch">Cuando baja la niebla, el humedal se queda callado.</span></div><p><b>NO</b>Oro de vela como texto sobre pergamino (1,4:1).</p></div>
+      <div class="uso si"><div class="muestra" style="background:var(--niebla)"><span class="btn" style="box-shadow:6px 6px 0 var(--sangre)">Postula tu leyenda</span></div><p><b>SÍ</b>Sombra dura sin desenfoque, en contorno o sangre.</p></div>
+      <div class="uso no"><div class="muestra" style="background:linear-gradient(135deg,#3a2f5a,#0b0811)"><span class="btn" style="box-shadow:0 10px 30px rgba(227,179,92,.6);border-color:transparent;background:linear-gradient(#f5d38a,#c9902f)">Postula tu leyenda</span></div><p><b>NO</b>Degradados, brillos y sombras difusas.</p></div>
+      <div class="uso si"><div class="muestra" style="background:var(--abismo)"><img src="assets/logo/logotipo-horizontal-tinieblas.svg" alt="" style="width:92%"></div><p><b>SÍ</b>El logo original recoloreado, con «Tinieblas» en el descriptor.</p></div>
+      <div class="uso no"><div class="muestra" style="background:var(--abismo)"><img src="assets/logo/logotipo-horizontal-tinieblas.svg" alt="" style="width:70%;transform:rotate(-12deg) scaleY(1.6);filter:hue-rotate(140deg)"></div><p><b>NO</b>Girar, estirar, recolorear fuera de la paleta o redibujar el tazón.</p></div>
+    </div>
+    <div class="grid listas">
+      <div class="lista si"><h4>Sí</h4><ul>
+        <li>Partir de las piezas del kit y cambiar solo la luz: noche, luna, vela, niebla.</li>
+        <li>Oro de vela para lo que brilla: franjas, destellos, números, botones.</li>
+        <li>Motivos muiscas como geometría (rombos escalonados, espirales, dientes), con respeto.</li>
+        <li>Nombrar el territorio: Engativá, el humedal Jaboque, Bogotá.</li>
+        <li>Ilustraciones planas y en grupos de 3 a 5 objetos.</li>
+      </ul></div>
+      <div class="lista no"><h4>No</h4><ul>
+        <li>Rostros de personas reales sin consentimiento.</li>
+        <li>Gore, sangre realista o calaveras: el miedo se sugiere con niebla y silencio.</li>
+        <li>Oro de vela o sangre seca como texto pequeño (usa ámbar o coral ceniza).</li>
+        <li>Fuentes góticas, de imitación medieval o «de terror».</li>
+        <li>«Tinieblas» sin el nombre madre, o el tazón redibujado.</li>
+      </ul></div>
+    </div>
+  </section>
+</main>
+
+<div class="greca" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <img src="assets/logo/logotipo-horizontal-tinieblas.svg" alt="Tazón para Dos · Tinieblas">
+    <span>Sub-marca de <a href="https://thetrashkat.github.io/tazon-para-dos-marca/">Tazón para Dos</a> · <a href="https://tazon-para-dos.online/">tazon-para-dos.online</a> · <a href="https://www.instagram.com/tazonparados/">@tazonparados</a> · <a href="brand/brand.json">brand.json</a> · <a href="brand/tokens.css">tokens.css</a></span>
+  </div>
+</footer>
+<script>
+  // Íconos desde el sprite (una sola fuente de verdad)
+  (function () {
+    var nuevos = ["luna","luna-llena","niebla","vela","farol","humedal","espiral","zarpazo","huella","hongo","d20-agrietado","greca","chia"];
+    var heredados = ["dado","d20","meeple","carta","idea","microfono","audifonos","onda","play","historia","libro","comunidad","corazon","ubicacion","calendario","reloj","web","camara","votacion","destello","tazon"];
+    function pinta(id, lista) {
+      var el = document.getElementById(id);
+      el.innerHTML = lista.map(function (n) {
+        return '<div class="icon"><svg aria-hidden="true"><use href="assets/iconos/sprite.svg#i-' + n + '"/></svg><span>' + n + '</span></div>';
+      }).join("");
+    }
+    pinta("nuevos", nuevos); pinta("heredados", heredados);
+  })();
+</script>
+</body>
+</html>
