@@ -113,6 +113,10 @@ Otra opción es una clave `tema: tinieblas` en el front matter que busque `tema-
 
 Si la herramienta añade clases o colores nuevos, regenera el tema con `build.py` (función `theme_css`). La portada se detecta por el color del primer `<rect>` de `bloque_diagonal()`, y si esa función cambia hay que revisar ese selector.
 
+## Divisores
+
+Los divisores de la marca en colores Tinieblas están en `assets/divisores/noche/` y `assets/divisores/pergamino/`, y su CSS (`divisores-noche.css`, `divisores-pergamino.css`) se añade solo al final de cada tema al ejecutar `tools/build.py`. Los genera `D:\tazon-para-dos-marca\tools\divisores.py`; la comparación está en https://thetrashkat.github.io/tazon-para-dos-marca/divisores.html. Para escenas nocturnas funcionan mejor `luna`, `greca` y `zarpazo`.
+
 ## Reglas rápidas
 
 - **Sí:** las piezas del kit con la luz cambiada; oro de vela para lo que brilla; texto largo en pergamino sobre noche o en tinta sobre pergamino; motivos muiscas como geometría y con respeto; nombrar el territorio (Engativá, el humedal Jaboque).

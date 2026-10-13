@@ -565,6 +565,13 @@ def bloque_diagonal(sup, inf, alto=297, corte=0.70, pendiente=4.0):
 <path d="M0 {y:.1f} L{w} {y - d:.1f} M0 {y + 5:.1f} L{w} {y - d + 5:.1f}" stroke="{OUT}" stroke-width="1.1" fill="none"/></svg>""")
 
 
+def divisores_css(modo):
+    """Variantes de divisor (::: divisor cinta, luna…) en colores Tinieblas. Las genera
+    D:/tazon-para-dos-marca/tools/divisores.py en assets/divisores/."""
+    f = ROOT / "assets" / "divisores" / f"divisores-{modo}.css"
+    return "\n" + f.read_text(encoding="utf-8") if f.exists() else ""
+
+
 def theme_css(modo):
     oscuro = modo == "noche"
     V = dict(
@@ -724,8 +731,8 @@ section.contraportada .cierre span::after{{content:"JUGAR TAMBIÉN ES ESCUCHAR L
 
 
 def build_tema():
-    write("tema-tinieblas.css", theme_css("noche"))
-    write("tema-tinieblas-pergamino.css", theme_css("pergamino"))
+    write("tema-tinieblas.css", theme_css("noche") + divisores_css("noche"))
+    write("tema-tinieblas-pergamino.css", theme_css("pergamino") + divisores_css("pergamino"))
 
 
 # ------------------------------------------------------------------ tabla de contraste en index.html
