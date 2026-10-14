@@ -443,6 +443,11 @@
       "tema-tinieblas.css",
       "tema-tinieblas-pergamino.css"
     ],
-    "proposed_option": "--tema RUTA.css (se añade como <style> después del CSS base y al final de estilo.css en --web)"
+    "option": "--tema RUTA.css (implementada: se añade después del CSS base y al final de estilo.css con --web)",
+    "editors": {
+      "historias": "https://thetrashkat.github.io/historias-tazon/editor/ (Estilo: Tinieblas)",
+      "pancartas": "https://thetrashkat.github.io/historias-tazon/editor/pancarta.html (recetas niebla, sangre, vela)"
+    },
+    "dividers": "assets/divisores/noche y assets/divisores/pergamino (los genera D:/tazon-para-dos-marca/tools/divisores.py)"
   }
 }
